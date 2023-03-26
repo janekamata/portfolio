@@ -1,0 +1,40 @@
+Most of our changes were new ideas instead of simple merges since we started from scratch! 
+(So there is more explanation in Changes.txt). While our design shared many similarities,
+they were both inefficient and were not well suited to implementing the additions in part 2.
+
+1. Our implementations were pretty different and we decided to start from scratch by 
+    using arraylists. We discarded the use of ILists since traversing through arraylists 
+    was much simpler and easier if we wanted to find a position, for example. Also most of 
+    our utils use array lists which, again, was much easier to use. Each of us had done a 
+    different list implementation in the previous part (generic list and non-generic list
+    classes but using arraylists seemed better for this use case.
+
+2. We also decided to switch to using posns, which we did not before, because 
+    that would be able to keep track of positioning as well. We got this idea from the examples 
+    we saw from the sokoban part 1 review assignment. This was much easier than counting 
+    columns and rows and attempting to keep track of it as we had both done in our previous 
+    implementations. It also meant that overlaying the images was not necessary anymore
+    since the images could all be placed using their coordinates.
+
+3. Something that we both kept was keeping the ICell and AICell structure since it allowed us 
+	to easily implement a new tile, like the hole. We both used AICell to abstract
+	similarities between cells so that less code would need to be written and repeated. We
+	used an idea from one of our implementations to have a boolean to see whether or not a cell
+	is a ground cell to help with converting the given string in the constructor into cells.
+
+4. We also decided to use function-objects to help with movement since it would be able to 
+	visit all the types of cells easily. We had used them a bit in each of our implementations,
+	but decided that this implementation can better utilize function-objects since there is
+	a lot more moving parts for this updated implementation.
+	
+5. We kept SokobanGame and SokobanWorld to distinguish the game logic from the user input because 
+	it made the code a lot more readable and understandable. We also kept from one of our
+	implementations that a SokobanBoard has a list of contents and a list of ground so
+	that the cells are kept in separate "levels". This was useful for seeing if the level
+	had been won, so we decided to keep it and could always combine the lists together a needed.
+
+6. As an added bonus, we decided to change the given images into something more fun and visually
+	appealing. We wanted to incorporate an image of a Ben Lerner somehow into the design. In both
+	of our implementations, we went with the given images but felt that they could be 
+	improved upon.
+
