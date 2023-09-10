@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.ButtonType?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<Scene fx:id="sortTaskEventScene" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <root>
+      <DialogPane fx:id="sortTaskEventDialogPane" contentText="dlkfsln" headerText="kjlkdjfljsd" prefHeight="169.0" prefWidth="81.0">
+         <buttonTypes>
+            <ButtonType fx:constant="FINISH" />
+            <ButtonType fx:constant="CANCEL" />
+         </buttonTypes>
+         <header>
+            <Label fx:id="sortTaskEventHeader" style="-fx-font-weight: bold; -fx-font-size: 16;" text="Choose Sorting Flag">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Label>
+         </header>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+         <content>
+            <VBox fx:id="sortTaskEventVbox" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="sortTaskEventLabel" text="Pick Sorting Flag">
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin></Label>
+                  <ChoiceBox fx:id="sortTaskEventChoiceBox" prefWidth="150.0" />
+               </children>
+            </VBox>
+         </content>
+      </DialogPane>
+   </root>
+</Scene>

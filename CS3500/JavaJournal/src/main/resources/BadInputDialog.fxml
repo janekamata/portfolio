@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.ButtonType?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+
+<Scene fx:id="badInputScene" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <root>
+      <DialogPane fx:id="badInputDialogPane" contentText="dlkfsln" headerText="kjlkdjfljsd" prefHeight="304.0" prefWidth="242.0">
+         <buttonTypes>
+            <ButtonType fx:constant="CLOSE" />
+         </buttonTypes>
+         <header>
+            <Label fx:id="badInputHeader" style="-fx-font-weight: bold; -fx-font-size: 16;" text="Bad Input">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Label>
+         </header>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+         <content>
+            <HBox fx:id="badInputHbox" prefHeight="83.0" prefWidth="212.0">
+               <children>
+                  <TextArea fx:id="badInputTextArea" editable="false" prefHeight="83.0" prefWidth="190.0" promptText="Bad Input" />
+               </children>
+            </HBox>
+         </content>
+      </DialogPane>
+   </root>
+</Scene>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ButtonType?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.Scene?>
+<Scene xmlns:fx="http://javafx.com/fxml/1" fill="transparent" xmlns="http://javafx.com/javafx/20.0.1"
+  fx:id="setLimitScene">
+  <root>
+    <DialogPane contentText="dlkfsln" headerText="kjlkdjfljsd" prefHeight="169.0"
+      prefWidth="81.0" fx:id="setLimitDialogPane">
+      <buttonTypes>
+        <ButtonType fx:constant="FINISH"/>
+        <ButtonType fx:constant="CANCEL"/>
+      </buttonTypes>
+      <content>
+        <HBox prefHeight="23.0" prefWidth="250.0" fx:id="setLimitHbox">
+          <children>
+            <TextField prefHeight="331.0" prefWidth="168.0" promptText="0"
+              fx:id="setLimitTextField"/>
+          </children>
+        </HBox>
+      </content>
+      <header>
+        <Label style="-fx-font-weight: bold; -fx-font-size: 16;" text="Set Limit"
+          fx:id="setLimitHeader">
+          <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+          </padding>
+        </Label>
+      </header>
+      <padding>
+        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0"/>
+      </padding>
+    </DialogPane>
+  </root>
+</Scene>

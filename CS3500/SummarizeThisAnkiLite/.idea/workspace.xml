@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cdb45efd-1daa-4a35-85d0-69e70343e035" name="Changes" comment="Comments">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cs3500/pa02/DriverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cs3500/pa02/DriverTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cs3500/pa02/controller/GenerateStudyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cs3500/pa02/controller/GenerateStudyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cs3500/pa02/mockmodels/MockAppendable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cs3500/pa02/mockmodels/MockAppendable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cs3500/pa02/reader/ToStudySetReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cs3500/pa02/reader/ToStudySetReaderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cs3500/pa02/studysession/SessionUserViewTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cs3500/pa02/studysession/SessionUserViewTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PA02" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PA02" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PA02" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PA02" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="distribution" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PA02" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="documentation" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PA02" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="help" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PA02" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PA02" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PA02" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Enum" />
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2PwslFC5dzkF11W0w7PkXcIC1PL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "OverrideImplement.generate.javadoc": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "code.cleanup.on.save": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/janek/OneDrive/Documents/CS 3500/pa02-janekamata",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "rearrange.code.on.save": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\janek\OneDrive\Documents\CS 3500\pa02-janekamata\src\test\java\cs3500\pa01\generatestudy" />
+      <recent name="C:\Users\janek\OneDrive\Documents\CS 3500\pa02-janekamata" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="cs3500.pa02.studysession" />
+      <recent name="cs3500.pa02" />
+      <recent name="cs3500.pa02.controller" />
+      <recent name="cs3500.pa02.generatestudy" />
+      <recent name="cs3500.pa02.reader" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.pa02-janekamata [build]">
+    <configuration name="Driver" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cs3500.pa02.Driver" />
+      <module name="PA02.main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/test/resources" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cs3500.pa02.mockmodels.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="pa02-janekamata [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="pa02-janekamata [check]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="check" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="pa02-janekamata [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="pa02-janekamata [jacocoTestCoverageVerification]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jacocoTestCoverageVerification" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="pa02-janekamata [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.pa02-janekamata [build]" />
+        <item itemvalue="Gradle.pa02-janekamata [jacocoTestCoverageVerification]" />
+        <item itemvalue="Gradle.pa02-janekamata [clean]" />
+        <item itemvalue="Gradle.pa02-janekamata [test]" />
+        <item itemvalue="Gradle.pa02-janekamata [check]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cdb45efd-1daa-4a35-85d0-69e70343e035" name="Changes" comment="" />
+      <created>1684379627730</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684379627730</updated>
+      <workItem from="1684379630203" duration="1878000" />
+      <workItem from="1684427934214" duration="14000" />
+      <workItem from="1684451155441" duration="785000" />
+      <workItem from="1684454611975" duration="213000" />
+      <workItem from="1684461138829" duration="100000" />
+      <workItem from="1684461393079" duration="22000" />
+      <workItem from="1684511514703" duration="8000" />
+      <workItem from="1684512594967" duration="36000" />
+      <workItem from="1684512642675" duration="11320000" />
+      <workItem from="1684543420727" duration="13639000" />
+      <workItem from="1684693994313" duration="14260000" />
+      <workItem from="1684708719695" duration="7000" />
+      <workItem from="1684719960356" duration="11765000" />
+      <workItem from="1684769683161" duration="4867000" />
+      <workItem from="1684779830144" duration="15000" />
+      <workItem from="1684781550383" duration="7223000" />
+      <workItem from="1684797151343" duration="19357000" />
+      <workItem from="1684850064413" duration="1158000" />
+      <workItem from="1684851815784" duration="3550000" />
+      <workItem from="1684855949269" duration="8058000" />
+      <workItem from="1684870472511" duration="2074000" />
+      <workItem from="1684883077991" duration="114000" />
+      <workItem from="1684886702588" duration="17004000" />
+      <workItem from="1684936223014" duration="14045000" />
+      <workItem from="1684956364797" duration="43000" />
+      <workItem from="1684962870344" duration="3769000" />
+      <workItem from="1684968953643" duration="13392000" />
+      <workItem from="1685047018115" duration="4133000" />
+      <workItem from="1685051225667" duration="5740000" />
+      <workItem from="1685057088017" duration="62000" />
+      <workItem from="1685057294929" duration="297000" />
+      <workItem from="1685057616780" duration="186000" />
+      <workItem from="1685057830532" duration="54000" />
+      <workItem from="1685057937904" duration="408000" />
+      <workItem from="1685062552065" duration="15092000" />
+      <workItem from="1685111237898" duration="4916000" />
+      <workItem from="1685117399106" duration="1511000" />
+      <workItem from="1685122386873" duration="4908000" />
+      <workItem from="1685127315850" duration="1999000" />
+      <workItem from="1685130238815" duration="173000" />
+      <workItem from="1685130415623" duration="3134000" />
+      <workItem from="1685133595285" duration="59000" />
+      <workItem from="1685133673817" duration="482000" />
+      <workItem from="1685134176916" duration="93000" />
+      <workItem from="1685134274159" duration="127000" />
+      <workItem from="1685134419296" duration="942000" />
+      <workItem from="1685135379128" duration="145000" />
+      <workItem from="1685135617101" duration="1537000" />
+    </task>
+    <task id="LOCAL-00001" summary="Sample sr file">
+      <created>1684451330136</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684451330136</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added initial UML">
+      <created>1684454632573</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1684454632573</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Updated initial UML">
+      <created>1684461187942</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684461187942</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Created card class and its methods; toString, getQuestion, getAnswer, CardDifficulty enum, equals, hashCode; fix #16">
+      <created>1684520831069</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684520831069</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Updated card tests">
+      <created>1684521485273</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684521485273</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Refactored MyFileReader into an interface with two implementations; fix #2">
+      <created>1684523535651</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684523535651</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add the second implementation of MyFileReader that reads into a study set; fix #3">
+      <created>1684705579000</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1684705579000</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Created the file writer interface and changed the implementation to include writing study sets and study guides; fix #4">
+      <created>1684707354346</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1684707354346</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Implemented design changes to heading, important, and comparators; fix #8">
+      <created>1684707935783</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1684707935783</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Created the SessionStats clas and its methods; fix #15">
+      <created>1684723328129</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1684723328130</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Created the SessionView class and its method; fix #12">
+      <created>1684728394566</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1684728394566</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Working on Driver and Controllers!">
+      <created>1684731731578</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1684731731578</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Working on Driver and Controllers!">
+      <created>1684853314767</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1684853314767</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Finalized implementation design for Controllers">
+      <created>1684903945198</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1684903945198</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Finalized implementation design for generatestudy">
+      <created>1684939894536</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1684939894536</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Finalized implementation design">
+      <created>1684953549733</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1684953549733</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Finalized design besides error handling">
+      <created>1684966552413</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1684966552413</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Finalized design with error handling">
+      <created>1684976810335</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1684976810335</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Wrote additional tests and added functionality to change card difficulty; fix #14">
+      <created>1684983429865</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1684983429865</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Copied over tests from part 1 and created generateStudySet in GenerateStudy; fix #9 and fix #22">
+      <created>1684986810885</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1684986810886</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Working on tests">
+      <created>1685051146284</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1685051146284</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Created StudySet and its methods including sorting cards by difficulty and getting random; fix #17, fix #18, fix #19">
+      <created>1685071582612</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1685071582612</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Created StudySet and its methods including sorting cards by difficulty and getting random; fix #17, fix #18, fix #19">
+      <created>1685077657404</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1685077657404</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Completed StudySession controller and tested user input; fix #10, fix #11, fix #13, fix #17, fix #18, fix #19, fix #21, fix #24">
+      <created>1685127398853</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1685127398853</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Fixing style">
+      <created>1685127502183</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1685127502183</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Created and tested Driver along side GenerateStudy; fix #5, fix #7, fix #20">
+      <created>1685130669213</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1685130669213</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Update">
+      <created>1685134111774</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1685134111774</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Update">
+      <created>1685135169322</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1685135169322</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Updated; fix #6">
+      <created>1685136140271</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1685136140271</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Updated initial UML" />
+    <MESSAGE value="Created card class and its methods; toString, getQuestion, getAnswer, CardDifficulty enum, equals, hashCode; fix #16" />
+    <MESSAGE value="Updated card tests" />
+    <MESSAGE value="Refactored MyFileReader into an interface with two implementations; fix #2" />
+    <MESSAGE value="Add the second implementation of MyFileReader that reads into a study set; fix #3" />
+    <MESSAGE value="Created the file writer interface and changed the implementation to include writing study sets and study guides; fix #4" />
+    <MESSAGE value="Implemented design changes to heading, important, and comparators; fix #8" />
+    <MESSAGE value="Created the SessionStats clas and its methods; fix #15" />
+    <MESSAGE value="Created the SessionView class and its method; fix #12" />
+    <MESSAGE value="Working on Driver and Controllers!" />
+    <MESSAGE value="Finalized implementation design for Controllers" />
+    <MESSAGE value="Finalized implementation design for generatestudy" />
+    <MESSAGE value="Finalized implementation design" />
+    <MESSAGE value="Finalized design besides error handling" />
+    <MESSAGE value="Finalized design with error handling" />
+    <MESSAGE value="Wrote additional tests and added functionality to change card difficulty; fix #14" />
+    <MESSAGE value="Copied over tests from part 1 and created generateStudySet in GenerateStudy; fix #9 and fix #22" />
+    <MESSAGE value="Working on tests" />
+    <MESSAGE value="Created StudySet and its methods including sorting cards by difficulty and getting random; fix #17, fix #18, fix #19" />
+    <MESSAGE value="Completed StudySession controller and tested user input; fix #10, fix #11, fix #13, fix #17, fix #18, fix #19, fix #21, fix #24" />
+    <MESSAGE value="Fixing style" />
+    <MESSAGE value="Created and tested Driver along side GenerateStudy; fix #5, fix #7, fix #20" />
+    <MESSAGE value="Update" />
+    <MESSAGE value="Updated; fix #6" />
+    <MESSAGE value="Comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Comments" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

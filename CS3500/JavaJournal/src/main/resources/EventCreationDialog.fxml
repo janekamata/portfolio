@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.ButtonType?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<Scene fx:id="eventCreationScene" fill="transparent" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <root>
+    <DialogPane fx:id="eventCreationDialogPane" contentText="dlkfsln" headerText="kjlkdjfljsd" prefHeight="340.0" prefWidth="582.0">
+      <buttonTypes>
+        <ButtonType fx:constant="FINISH" />
+        <ButtonType fx:constant="CANCEL" />
+      </buttonTypes>
+      <content>
+        <VBox fx:id="eventCreationContentVbox" prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+          <children>
+            <VBox fx:id="eventCreationNameVbox" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+              <children>
+                <Label fx:id="eventCreationNameLabel" text="Name*" />
+                <TextField fx:id="eventCreationNameTextField" />
+              </children>
+            </VBox>
+            <VBox fx:id="eventCreationDescriptionVbox" layoutX="22.0" layoutY="22.0" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+              <children>
+                <Label fx:id="eventCreationDescriptionLabel" text="Description" />
+                <TextArea fx:id="eventCreationDescriptionTextArea" prefHeight="200.0" prefWidth="200.0" />
+              </children>
+            </VBox>
+            <VBox fx:id="eventCreationDayVbox" layoutX="22.0" layoutY="69.0" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+              <children>
+                <Label fx:id="eventCreationDayLabel" text="Day of Week*" />
+                <ChoiceBox fx:id="eventCreationDayChoiceBox" prefWidth="150.0" />
+              </children>
+            </VBox>
+            <VBox fx:id="eventCreationTimeVbox" layoutX="22.0" layoutY="116.0" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+              <children>
+                <Label fx:id="eventCreationTimeLabel" text="Start Time*" />
+                <HBox fx:id="eventCreationTimeHbox" prefHeight="100.0" prefWidth="200.0">
+                  <children>
+                    <TextField fx:id="eventCreationTimeHourTextField" prefHeight="29.0" prefWidth="44.0" promptText="hr" />
+                    <Label fx:id="eventCreationTimeSeparatorLabel" text=":" />
+                    <TextField fx:id="eventCreationTimeMinuteTextField" prefHeight="29.0" prefWidth="44.0" promptText="m" />
+                  </children>
+                </HBox>
+              </children>
+            </VBox>
+            <VBox fx:id="eventCreationDurationVbox" layoutX="22.0" layoutY="163.0" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+              <children>
+                <Label fx:id="eventCreationDurationLabel" text="Duration*" />
+                <HBox fx:id="eventCreationDurationVbox" prefHeight="100.0" prefWidth="200.0">
+                  <children>
+                    <TextField fx:id="eventCreationDurationTextField" prefHeight="29.0" prefWidth="86.0" />
+                    <Label fx:id="eventCreationDurationFieldLabel" prefHeight="98.0" prefWidth="51.0" text="minutes">
+                      <HBox.margin>
+                        <Insets left="10.0" />
+                      </HBox.margin>
+                    </Label>
+                  </children>
+                </HBox>
+              </children>
+            </VBox>
+          </children>
+        </VBox>
+      </content>
+      <header>
+        <Label fx:id="eventCreationHeader" style="-fx-font-weight: bold; -fx-font-size: 16;" text="New Event">
+          <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+          </padding>
+        </Label>
+      </header>
+      <padding>
+        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+      </padding>
+    </DialogPane>
+  </root>
+</Scene>

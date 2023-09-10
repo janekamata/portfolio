@@ -47,3 +47,6 @@ These projects include JUnit testing and Javadoc.
 
   - Anki Lite: Creates a console-based application for spaced repetition study sessions. Session are based on a provided
   .sr file. Follows part of the MVC design pattern.
+
+
+- **JavaJournal**: Bullet journal with week view, event/task creation, commitment warnings, file management, and more. 

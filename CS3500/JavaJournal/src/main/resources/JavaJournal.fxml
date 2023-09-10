@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<Scene fx:id="scene" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <root>
+      <BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0">
+         <top>
+            <StackPane alignment="CENTER_RIGHT" BorderPane.alignment="CENTER_RIGHT">
+               <children>
+                  <MenuBar fx:id="menuBar" prefHeight="0.0" prefWidth="900.0">
+                    <menus>
+                      <Menu fx:id="fileMenu" mnemonicParsing="false" text="File">
+                           <items>
+                              <MenuItem fx:id="saveMenuItem" mnemonicParsing="false" text="Save">
+                                 <accelerator>
+                                    <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                                 </accelerator>
+                              </MenuItem>
+                              <MenuItem fx:id="openMenuItem" mnemonicParsing="false" text="Open">
+                                 <accelerator>
+                                    <KeyCodeCombination alt="UP" code="O" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                                 </accelerator>
+                              </MenuItem>
+                              <Menu fx:id="newWeekMenu" mnemonicParsing="false" text="New Week">
+                                <items>
+                                    <MenuItem fx:id="newWeekMenuItem" mnemonicParsing="false" text="From Blank">
+                                       <accelerator>
+                                          <KeyCodeCombination alt="UP" code="N" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                                       </accelerator>
+                                    </MenuItem>
+                                    <MenuItem fx:id="startFromTemplateMenuItem" mnemonicParsing="false" text="From Template">
+                                       <accelerator>
+                                          <KeyCodeCombination alt="DOWN" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                                       </accelerator>
+                                    </MenuItem>
+                                </items>
+                              </Menu>
+                              <MenuItem fx:id="setWeekNameMenuItem" mnemonicParsing="false" text="Set Week Name">
+                                 <accelerator>
+                                    <KeyCodeCombination alt="DOWN" code="W" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                                 </accelerator>
+                              </MenuItem>
+                              <MenuItem fx:id="setStartMenuItem" mnemonicParsing="false" text="Set Start Day">
+                                 <accelerator>
+                                    <KeyCodeCombination alt="DOWN" code="S" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                                 </accelerator>
+                              </MenuItem>
+                           </items>
+                      </Menu>
+                      <Menu fx:id="eventMenu" mnemonicParsing="false" text="Event">
+                           <items>
+                              <MenuItem fx:id="addEventMenuItem" mnemonicParsing="false" text="Add Event">
+                                 <accelerator>
+                                    <KeyCodeCombination alt="UP" code="E" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                                 </accelerator>
+                              </MenuItem>
+                              <MenuItem fx:id="changeEventLimitMenuItem" mnemonicParsing="false" text="Change Event Limit">
+                                 <accelerator>
+                                    <KeyCodeCombination alt="DOWN" code="E" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                                 </accelerator>
+                              </MenuItem>
+                           </items>
+                      </Menu>
+                      <Menu fx:id="taskMenu" mnemonicParsing="false" text="Task">
+                           <items>
+                              <MenuItem fx:id="addTaskMenuItem" mnemonicParsing="false" text="Add Task">
+                                 <accelerator>
+                                    <KeyCodeCombination alt="UP" code="T" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                                 </accelerator>
+                              </MenuItem>
+                              <MenuItem fx:id="changeTaskLimitMenuItem" mnemonicParsing="false" text="Change Task Limit">
+                                 <accelerator>
+                                    <KeyCodeCombination alt="DOWN" code="T" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                                 </accelerator>
+                              </MenuItem>
+                           </items>
+                      </Menu>
+                        <Menu fx:id="sortMenu" mnemonicParsing="false" text="Sort">
+                           <items>
+                              <MenuItem fx:id="sortItemsMenuItem" mnemonicParsing="false" text="Sort Tasks and Events">
+                                 <accelerator>
+                                    <KeyCodeCombination alt="UP" code="R" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                                 </accelerator>
+                              </MenuItem>
+                           </items>
+                        </Menu>
+                    </menus>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </MenuBar>
+                  <ImageView fitHeight="19.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@book.png" />
+                     </image>
+                     <StackPane.margin>
+                        <Insets right="10.0" />
+                     </StackPane.margin>
+                  </ImageView>
+               </children>
+            </StackPane>
+         </top>
+         <left>
+            <VBox fx:id="sideBarVbox" prefHeight="575.0" prefWidth="140.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox fx:id="taskQueueVbox" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <HBox alignment="CENTER" VBox.vgrow="NEVER">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                           <children>
+                              <ImageView fitHeight="19.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@task.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label fx:id="taskQueueLabel" prefHeight="18.0" prefWidth="212.0" style="-fx-font-weight: bolder;" text="Task Queue" />
+                           </children>
+                        </HBox>
+                        <StackPane alignment="CENTER_RIGHT">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                           <children>
+                              <TextField fx:id="taskQueueSearch" prefHeight="21.0" prefWidth="140.0" promptText="Search tasks..." styleClass="search-bar" />
+                              <ImageView fitHeight="19.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@search.png" />
+                                 </image>
+                                 <StackPane.margin>
+                                    <Insets right="10.0" />
+                                 </StackPane.margin>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <ScrollPane fx:id="taskQueueScrollPane" hbarPolicy="NEVER" prefHeight="246.0" prefWidth="140.0" VBox.vgrow="ALWAYS">
+                           <content>
+                              <VBox fx:id="taskQueuePaneVbox" prefHeight="196.0" prefWidth="123.0" spacing="10.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </VBox>
+                           </content></ScrollPane>
+                        <StackPane fx:id="taskProgressStackPane">
+                           <children>
+                              <ProgressBar fx:id="taskProgressBar" prefHeight="41.0" prefWidth="200.0" progress="0.0">
+                                 <StackPane.margin>
+                                    <Insets top="5.0" />
+                                 </StackPane.margin></ProgressBar>
+                              <Label fx:id="taskProgressBarLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="15.0" prefWidth="37.0" style="-fx-font-size: 12;" text="0%" textAlignment="CENTER">
+                                 <StackPane.margin>
+                                    <Insets top="5.0" />
+                                 </StackPane.margin></Label>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="notesVbox" prefHeight="85.0" prefWidth="140.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" VBox.vgrow="NEVER">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                           <children>
+                              <ImageView fitHeight="19.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@note.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label fx:id="notesLabel" prefHeight="18.0" prefWidth="265.0" style="-fx-font-weight: bolder;" text="Notes" />
+                           </children>
+                        </HBox>
+                        <TextArea fx:id="notesTextArea" prefHeight="140.0" prefWidth="140.0" wrapText="true" VBox.vgrow="ALWAYS" />
+                     </children>
+                  </VBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </BorderPane.margin>
+            </VBox>
+         </left>
+         <center>
+            <VBox fx:id="centerWeekVbox" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox fx:id="weekHeadingHbox" prefHeight="35.0" prefWidth="723.0" VBox.vgrow="NEVER">
+                     <children>
+                        <Label fx:id="weekLabel" maxWidth="1.7976931348623157E308" prefHeight="35.0" prefWidth="458.0" style="-fx-font-weight: bold; -fx-font-size: 16;" text="The Best Week Ever" HBox.hgrow="ALWAYS">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                        <HBox fx:id="weekStatsHbox" alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="564.0" HBox.hgrow="NEVER">
+                           <children>
+                              <Label fx:id="weekStatsEventsLabel" prefHeight="35.0" prefWidth="43.0" style="-fx-font-size: 12; -fx-font-weight: bold;" text="Events: " />
+                              <Label fx:id="weekStatsEventsNumber" prefHeight="35.0" prefWidth="25.0" style="-fx-font-size: 12;" text="0" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="10.0" />
+                                 </HBox.margin></Label>
+                              <Label fx:id="maxEventsLabel" prefHeight="35.0" prefWidth="69.0" style="-fx-font-size: 12; -fx-font-weight: bold;" text="Max Events: " />
+                              <Label fx:id="maxEventsNumber" prefHeight="35.0" prefWidth="25.0" style="-fx-font-size: 12;" text="0" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="40.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="weekStatsTasksLabel" prefHeight="35.0" prefWidth="40.0" style="-fx-font-size: 12; -fx-font-weight: bold;" text="Tasks: " />
+                              <Label fx:id="weekStatsTasksNumber" prefHeight="35.0" prefWidth="25.0" style="-fx-font-size: 12;" text="0" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="10.0" />
+                                 </HBox.margin></Label>
+                              <Label fx:id="maxTasksLabel" prefHeight="35.0" prefWidth="66.0" style="-fx-font-size: 12; -fx-font-weight: bold;" text="Max Tasks: " />
+                              <Label fx:id="maxTasksNumber" prefHeight="35.0" prefWidth="25.0" style="-fx-font-size: 12;" text="0" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="15.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <GridPane fx:id="calendarGridPane" hgap="15.0" prefHeight="116.0" prefWidth="748.0" vgap="10.0" VBox.vgrow="SOMETIMES">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="304.5" minHeight="6.5" prefHeight="31.0" vgrow="NEVER" />
+                      <RowConstraints minHeight="10.0" prefHeight="527.5" vgrow="ALWAYS" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="day1Label" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="61.0" prefWidth="85.0" text="Sunday" textAlignment="CENTER" GridPane.vgrow="NEVER" />
+                        <Label fx:id="day2Label" prefHeight="51.0" prefWidth="100.0" text="Monday" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.vgrow="NEVER" />
+                        <Label fx:id="day3Label" prefHeight="55.0" prefWidth="100.0" text="Tuesday" GridPane.columnIndex="2" GridPane.vgrow="NEVER" />
+                        <Label fx:id="day4Label" prefHeight="62.0" prefWidth="100.0" text="Wednesday" GridPane.columnIndex="3" GridPane.vgrow="NEVER" />
+                        <Label fx:id="day5Label" prefHeight="57.0" prefWidth="100.0" text="Thursday" GridPane.columnIndex="4" GridPane.vgrow="NEVER" />
+                        <Label fx:id="day6Label" prefHeight="58.0" prefWidth="100.0" text="Friday" GridPane.columnIndex="5" GridPane.vgrow="NEVER" />
+                        <Label fx:id="day7Label" prefHeight="67.0" prefWidth="100.0" text="Saturday" GridPane.columnIndex="6" GridPane.vgrow="NEVER" />
+                        <ScrollPane fx:id="day1Pane" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" vbarPolicy="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+                           <content>
+                              <VBox fx:id="day1Vbox" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </VBox>
+                           </content>
+                        </ScrollPane>
+                        <ScrollPane fx:id="day2Pane" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" vbarPolicy="ALWAYS" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+                           <content>
+                              <VBox fx:id="day2Vbox" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </VBox>
+                           </content></ScrollPane>
+                        <ScrollPane fx:id="day3Pane" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" vbarPolicy="ALWAYS" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+                           <content>
+                              <VBox fx:id="day3Vbox" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </VBox>
+                           </content></ScrollPane>
+                        <ScrollPane fx:id="day4Pane" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" vbarPolicy="ALWAYS" GridPane.columnIndex="3" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+                           <content>
+                              <VBox fx:id="day4Vbox" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </VBox>
+                           </content></ScrollPane>
+                        <ScrollPane fx:id="day5Pane" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" vbarPolicy="ALWAYS" GridPane.columnIndex="4" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+                           <content>
+                              <VBox fx:id="day5Vbox" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </VBox>
+                           </content></ScrollPane>
+                        <ScrollPane fx:id="day6Pane" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" vbarPolicy="ALWAYS" GridPane.columnIndex="5" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+                           <content>
+                              <VBox fx:id="day6Vbox" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </VBox>
+                           </content></ScrollPane>
+                        <ScrollPane fx:id="day7Pane" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" vbarPolicy="ALWAYS" GridPane.columnIndex="6" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+                           <content>
+                              <VBox fx:id="day7Vbox" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </VBox>
+                           </content></ScrollPane>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="15.0" right="15.0" top="5.0" />
+                     </padding>
+                  </GridPane>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </root>
+</Scene>
